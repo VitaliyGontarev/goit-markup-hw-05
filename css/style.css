@@ -42,12 +42,24 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.border-head {
+  margin-top: 0;
+  border-bottom: 1px solid #ececec;
+}
+
 /* nav*/
+
+.conteiner-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .main-nav {
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding-bottom: 25px;
-  padding-top: 24px;
 }
 
 .logo {
@@ -93,6 +105,7 @@ body {
 .item-link {
   display: inline-flex;
   align-items: center;
+  fill: var(--main-text-color);
 }
 .icon-email {
   width: 16px;
@@ -114,10 +127,13 @@ body {
 
 .page-contacts {
   display: flex;
+
+  align-items: center;
   margin-left: auto;
 }
 .contacts-nav {
   display: flex;
+  align-items: center;
 }
 .contacts-nav .item-link:not(:last-child) {
   margin-right: 30px;
@@ -585,13 +601,15 @@ body {
 .block-filtres {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 611px;
-  height: 54px;
 
   margin-top: 94px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 50px;
+  margin-bottom: 34px;
+  padding-top: 0;
+  padding-bottom: 16px;
 
   text-align: center;
 }
@@ -599,6 +617,7 @@ body {
 .filtres {
   display: flex;
   justify-content: center;
+  align-items: center;
 
   background-color: #f5f4fa;
   color: var(--text-title-color);
