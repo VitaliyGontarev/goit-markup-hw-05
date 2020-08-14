@@ -85,6 +85,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: color, fill;
+  transition-delay: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav {
   display: flex;
@@ -379,6 +382,10 @@ body {
 
   margin-right: 10px;
   margin-bottom: 24px;
+
+  transition: background-color;
+  transition-delay: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-icon :focus,
@@ -392,6 +399,7 @@ body {
   text-decoration: none;
   fill: var(--text-title-color);
 }
+
 .icon-link {
   display: flex;
   width: 44px;
@@ -442,8 +450,6 @@ body {
 }
 .icon-customers:focus,
 .icon-customers:hover {
-  display: flex;
-
   color: var(--accent-text);
 }
 
@@ -511,6 +517,9 @@ body {
 .adress-link {
   color: #acacb0;
   text-decoration: none;
+  transition: color;
+  transition-delay: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adress-link:focus,
@@ -542,6 +551,9 @@ body {
   background-color: #44454e;
   margin-right: 10px;
   margin-bottom: 24px;
+  transition: background-color, fill;
+  transition-delay: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .bacground-icon:focus,
 .bacground-icon:hover {
@@ -650,6 +662,10 @@ body {
   line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
+
+  transition: background-color, color;
+  transition-delay: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filtres:nth-child(5) {
   margin-right: 0;
@@ -699,6 +715,7 @@ body {
   height: 100%;
   opacity: 0;
 }
+
 .block-flex:hover .img-hover {
   opacity: 0.9;
 }
@@ -760,7 +777,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 8px;
+
   border-radius: 4px;
   min-width: 528px;
   min-height: 581px;
@@ -775,11 +792,12 @@ body {
 }
 
 .close-type {
+  position: absolute;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
-
-  margin-left: 490px;
-  border-radius: 15px;
+  border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
 }
