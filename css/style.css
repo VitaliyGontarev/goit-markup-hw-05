@@ -180,9 +180,10 @@ body {
 /* head*/
 
 .section-head {
-  text-align: center;
   margin-top: 0;
   margin-bottom: 94px;
+
+  text-align: center;
 }
 .overlay {
   max-width: 1600px;
@@ -201,8 +202,12 @@ body {
 }
 
 .title-head {
+  width: 696px;
+
   padding-top: 200px;
   margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 30px;
 
   color: var(--primary-white-color);
@@ -246,8 +251,10 @@ body {
   margin-bottom: 30px;
   margin-top: 0;
   padding: 25px 100px;
+
   width: 270px;
   height: 120px;
+
   background-color: #f5f4fa;
   border-radius: 4px;
 }
@@ -271,8 +278,6 @@ body {
 }
 
 .section-title {
-  color: var(--text-title-color);
-
   text-align: center;
   margin-top: 0;
   margin-bottom: 50px;
@@ -281,6 +286,8 @@ body {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+
+  color: var(--text-title-color);
 }
 
 .section-text {
@@ -309,6 +316,7 @@ body {
 }
 .img-bloc {
   display: block;
+
   width: 370px;
   height: 294px;
 }
@@ -339,13 +347,13 @@ body {
 
 /*our team*/
 .section-team {
-  background-color: #f5f4fa;
-
   margin-bottom: 94px;
   margin-right: auto;
   margin-right: auto;
   padding-top: 94px;
   padding-bottom: 94px;
+
+  background-color: #f5f4fa;
 }
 .bloc-team {
   display: flex;
